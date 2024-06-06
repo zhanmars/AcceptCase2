@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Submit a Case</h1>
-    <form action="https://YOUR_SALESFORCE_INSTANCE.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DWU0000056pRg" method="POST">
         <!-- Salesforce-required hidden fields -->
-        <input type="hidden" name="orgid" value="YOUR_SALESFORCE_ORG_ID">
-        <input type="hidden" name="retURL" value="https://yourwebsite.com/thank-you.html">
+     <input type=hidden name="orgid" value="00DWU0000056pRg">
+<input type=hidden name="retURL" value="http://thankyouforcase.tilda.ws">
 
         <!-- Custom fields -->
         <label for="name">Name:</label><br>
