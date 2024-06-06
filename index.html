@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Submission Form</title>
+</head>
+<body>
+    <h1>Submit a Case</h1>
+    <form action="https://YOUR_SALESFORCE_INSTANCE.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post">
+        <!-- Salesforce-required hidden fields -->
+        <input type="hidden" name="orgid" value="YOUR_SALESFORCE_ORG_ID">
+        <input type="hidden" name="retURL" value="https://yourwebsite.com/thank-you.html">
+
+        <!-- Custom fields -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
